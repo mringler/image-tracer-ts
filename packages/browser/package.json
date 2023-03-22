@@ -1,0 +1,55 @@
+{
+  "name": "@image-tracer-ts/browser",
+  "version": "1.0.3",
+  "description": "Platform-specific bindings for image-tracer-ts. Turn images into SVG files in browsers.",
+  "scripts": {
+    "clear": "rimraf lib/* dist/*",
+    "tsc": "tsc",
+    "make-bundle": "rollup --config",
+    "build": "run-s clear make-bundle"
+  },
+  "prepare" : "npm run build",
+  "main": "dist/image-tracer-browser.js",
+  "module": "dist/image-tracer-browser.mjs",
+  "types": "dist/image-tracer-browser.d.ts",
+  "files": [
+    "dist/",
+    "src"
+  ],
+  "author": "Moritz Ringler",
+  "license": "MIT",
+  "dependencies": {
+    "@image-tracer-ts/core": "^1.0.2",
+    "@vivaxy/png": "^1.3.0",
+    "decode-ico": "^0.4.1",
+    "magic-bytes.js": "^1.0.13",
+    "read-pixels": "^0.4.0"
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "image",
+    "tracer",
+    "tracing",
+    "vector",
+    "raster",
+    "vectorize",
+    "vectorizing",
+    "convert",
+    "conversion",
+    "converting",
+    "tracing",
+    "bitmap",
+    "svg",
+    "bmp",
+    "png",
+    "jpg",
+    "jpeg",
+    "gif",
+    "ico"
+  ],
+  "bugs": {
+    "url": "https://github.com/mringler/image-tracer-ts/issues"
+  },
+  "homepage": "https://github.com/mringler/image-tracer-ts"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@image-tracer-ts/core",
+  "version": "1.0.2",
+  "description": "Convert image bitmaps into SVG by tracing outlines. Typescript version of imagetracerjs. Use imagetracerts-nodejs or imagetracerts-browser for platform-specific file input and output.",
+  "scripts": {
+    "clean": "rimraf ./dist/*",
+    "prepack": "npm run build",
+    "rollup": "rollup --config",
+    "build": "run-s clean rollup"
+  },
+  "prepare" : "npm run build",
+  "author": "Moritz Ringler",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-replace": "^5.0.2"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "lib/"
+  ],
+  "keywords": [
+    "image",
+    "tracer",
+    "tracing",
+    "vector",
+    "raster",
+    "vectorize",
+    "vectorizing",
+    "convert",
+    "conversion",
+    "converting",
+    "tracing",
+    "bitmap",
+    "svg"
+  ],
+  "bugs": {
+    "url": "https://github.com/mringler/image-tracer-ts/issues"
+  },
+  "homepage": "https://github.com/mringler/image-tracer-ts"
+}

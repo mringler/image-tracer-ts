@@ -1,0 +1,63 @@
+{
+  "name": "@image-tracer-ts/nodejs",
+  "version": "1.0.4",
+  "description": "Platform-specific bindings for image-tracer-ts. Turn images into SVG files in Nodejs.",
+  "scripts": {
+    "clear": "rimraf lib/* dist/*",
+    "tsc": "tsc",
+    "make-bundle": "rollup --config",
+    "build": "run-s clear make-bundle"
+  },
+  "prepare" : "npm run build",
+  "author": "Moritz Ringler",
+  "license": "MIT",
+  "main": "./dist/image-tracer-nodejs.cjs",
+  "module": "./dist/image-tracer-nodejs.esm.js",
+  "types": "./dist/image-tracer-nodejs.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "@image-tracer-ts/core": "^1.0.2",
+    "decode-ico": "^0.4.1",
+    "g": "^2.0.1",
+    "jsdom": "^20.0.3",
+    "magic-bytes.js": "^1.0.13",
+    "sharp": "^0.31.2",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "@types/sharp": "^0.31.1",
+    "@types/yargs": "^17.0.17"
+  },
+  "keywords": [
+    "image",
+    "tracer",
+    "tracing",
+    "vector",
+    "raster",
+    "vectorize",
+    "vectorizing",
+    "convert",
+    "conversion",
+    "converting",
+    "tracing",
+    "bitmap",
+    "svg",
+    "bmp",
+    "png",
+    "jpg",
+    "jpeg",
+    "gif",
+    "ico"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mringler/image-tracer-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mringler/image-tracer-ts/issues"
+  },
+  "homepage": "https://github.com/mringler/image-tracer-ts"
+}
